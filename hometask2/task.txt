@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+class human {
+    String pol;
+    String name;
+    int longe;
+    String eyes;
+    String hair;
+
+    public void getInfo() {
+        System.out.println("Object Human. пол: " + pol);
+        System.out.println("Object Human. Имя: " + name);
+        System.out.println("Object Human. Рост: " + longe);
+        System.out.println("Object Human. Цвет глаз: " + eyes);
+        System.out.println("Object Human. Цвет волос: " + hair);
+    }
+}
+class bottle {
+	String drink;
+    String name;
+    int kg;
+    String firma;
+    String color;
+	
+	public void getInfo() {
+		
+		System.out.println("Object Human. пол: " + drink);
+        System.out.println("Object Human. Имя: " + name);
+        System.out.println("Object Human. Рост: " + kg);
+        System.out.println("Object Human. Цвет глаз: " + firma);
+        System.out.println("Object Human. Цвет волос: " + color);
+		
+	}
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        // Пример с объявлением объекта и дальнейшим присваиванием значения для полей объекта
+        System.out.println("EXAMPLE #1");
+        human Human = new human(); // объявляем объект класса Car
+        Human.pol = "Male"; // присваиваем значение определенных свойств для класса Car
+        Human.name = "bob";
+        Human.longe = 100;
+        Human.eyes = "Yellow";
+        Human.hair = "dark";
+
+        
+
+        // Пример объявления объекта без явного присваивания (должны подставиться значения по 
+//умолчанию)
+        
+
+        Human.getInfo();
+        System.out.println("==========================");
+        System.out.println("EXAMPLE #2");
+        bottle bottle = new bottle(); // объявляем объект класса Car
+        bottle.drink = "Juice"; // присваиваем значение определенных свойств для класса Car
+        bottle.name = "Fanta";
+        bottle.kg = 4;
+        bottle.firma = "Palpy";
+        bottle.color = "dark";
+         bottle.getInfo();
+    }
+}
