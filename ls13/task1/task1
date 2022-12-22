@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class ZeroError extends Exception{
+   ZeroError(String message){
+       super(message);
+    }
+
+}
+public class Main {
+    public static void getSimpleNum(int num) throws ZeroError {
+        try {
+            Scanner in = new Scanner(System.in);
+            System.out.println("Введите делитель и делимое (через Enter): ");
+            int a = in.nextInt();
+            int b = in.nextInt();
+            System.out.println("нацело: " + (a / b));
+            System.out.println("остаток: " + (a % b));
+        }
+        catch (Exception e) {
+            System.err.println("ERROR!!! You can't divide by 0 >:(");
+        }
+        }
+
+    }
